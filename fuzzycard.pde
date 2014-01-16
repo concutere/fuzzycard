@@ -45,7 +45,7 @@ void setup() {
   gs = greens(txt);
   ws = whites(txt);
   
-  PImage img = loadImage("family.jpg");
+  PImage img = loadImage("image.jpg");
   img.loadPixels();
   irs = reds(img);
   igs = greens(img);
@@ -74,6 +74,7 @@ void setup() {
 
 void draw() {
  // print("in draw");
+  saveFrame("out\\screen-####.png");
   background(0);
   loadPixels();
   if (textPhase) {
