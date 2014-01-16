@@ -74,7 +74,7 @@ void setup() {
 
 void draw() {
  // print("in draw");
-  saveFrame("out\\screen-####.png");
+  //saveFrame("out\\screen-####.png");
   background(0);
   loadPixels();
   if (textPhase) {
